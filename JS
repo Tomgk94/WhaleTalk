@@ -1,0 +1,29 @@
+var whaleTalk = (`Alpha Brain helps support memory and 
+focus as daily cognitive support`);
+
+var vowels = ['a', `e`, `i`, `o`, `u`];
+
+var resultArray = [];
+
+for (let i = 0; i < whaleTalk.length; i++) {
+    const element = whaleTalk[i];
+
+    if (element === `e`)
+    resultArray.push(`e`);
+
+    else if (element === `u`)
+    resultArray.push(`u`);
+
+for (let j = 0; j < vowels.length; j++) {
+    const whaleVowels = vowels[j];
+
+    if (element === whaleVowels) {
+        resultArray.push(whaleVowels);
+    }
+    
+}
+};
+
+var resultsString = resultArray.toUpperCase()
+
+console.log(resultsString);
